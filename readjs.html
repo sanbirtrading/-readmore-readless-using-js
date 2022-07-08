@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Read More/Read Less using JS</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="bootstrap.min.css" rel="stylesheet">
+
+  <style>
+  body{
+	  font-family: raleway, sans-serif;
+	  overflow-x: hidden;
+  }
+  #why-us{
+	margin: 180px 0 100px;
+  }
+  .extra-div a {
+	background: 0 0;
+	color: #1d6daa
+}
+.extra-div a:hover {
+	color: #fff
+}
+.extra-div {
+	border: medium none;
+	text-align: center;
+	transition: all ease-in-out .3s;
+}
+.extra-div a i {
+	font-size: 35px;
+	margin-bottom: 15px
+}
+.extra-div p {
+	line-height: 24px;
+	text-align: left
+}
+.extra-div .read {
+	border: 1px solid #1d6daa;
+	border-radius: 5px;
+	color: #1d6daa;
+	padding: 5px 15px;
+	font-size: 15px;
+	cursor: pointer;
+	transition: .1s;
+	background: 0 0
+}
+.extra-div .read:hover {
+	background-color: #1d6daa;
+	color: #fff
+}
+.ethics .box h3,
+.extra-div h4 {
+	font-weight: 700;
+	margin-bottom: 15px;
+	font-size: 22px;
+	color: #191919;
+	text-align: center;
+	text-transform: uppercase
+}
+.more-text {
+	display: none
+}
+.sa-box {
+	padding: 60px 35px;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, .1);
+	transition: all ease-in-out .3s;
+	margin: 0 -20px;
+	border-radius: 8px
+}
+.sa-box span {
+	font-size: 16px;
+	font-weight: 500
+}
+.sa-box:hover {
+	background: #1d6daa;
+	padding: 50px 35px 70px 35px;
+	border-radius: 8px
+}
+.sa-box:hover .read {
+	color: #fff!important;
+	border: 1px solid #fff!important;
+	background: 0 0
+}
+.sa-box:hover .read:hover {
+	background: #5086af;
+	border: 1px solid #5086af!important
+}
+.sa-box:hover a i,
+.sa-box:hover h4,
+.sa-box:hover p,
+.sa-box:hover span {
+	color: #fff
+}</style>
+
+</head>
+<body>
+
+	<section id="why-us" class="why-us">
+		<div class="container">
+			<div class="row">
+				<div class="extra-div col-lg-4 col-md-6 d-flex align-items-stretch">
+					<div class="sa-box">
+						<a href="#">
+							<div class="sa-icon"><i class="fa-3x fa fa-balance-scale" aria-hidden="ture"></i>
+							</div>
+						</a>
+						<h4 class="pt-2">BUSINESS PRINCIPLE</h4>
+						<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, aliquam? Sapiente ipsa error fuga quae provident aspernatur illum vitae? Soluta eius iste commodi fuga vitae nostrum et omnis eaque reprehenderit ratione animi natus dolore inventore repellat dolores eligendi quasi impedit saepe aliquid, quia sint distinctio eveniet, officia maxime! Porro, qui! <span class="more-text"> </span>
+						</p>
+						<button onclick="readMore(this)" class="read translateY-25">Read More</button>
+					</div>
+				</div>
+				<div class="extra-div col-lg-4 col-md-6 d-flex align-items-stretch">
+					<div class="sa-box">
+						<a href="#">
+							<div class="sa-icon"><i class="fa-3x fa fa-braille" aria-hidden="ture"></i>
+							</div>
+						</a>
+						<h4 class="pt-2">MISSION</h4>
+						<p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum nam reiciendis dignissimos doloribus ea alias nisi. Harum reprehenderit animi natus sapiente eum beatae quibusdam nisi itaque aspernatur modi, non, a nihil, ullam dolorem eligendi voluptas molestias. Impedit eum omnis deserunt quam tempore quis similique quia harum labore laborum iste provident id, corrupti pariatur esse, mollitia maiores aperiam, quos amet sapiente aliquam aut iusto laboriosam! Sequi officiis dolore magnam corrupti, aliquam velit. Sunt maxime incidunt officia! <span class="more-text"> </span>
+						</p>
+						<button onclick="readMore(this)" class="read translateY-25">Read More</button>
+					</div>
+				</div>
+				<div class="extra-div col-lg-4 col-md-6 d-flex align-items-stretch">
+					<div class="sa-box">
+						<a href="#">
+							<div class="sa-icon"><i class="fa-3x fas fa-low-vision" aria-hidden="ture"></i>
+							</div>
+						</a>
+						<h4 class="pt-2">VISION</h4>
+						<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, beatae aliquam molestiae maiores quam illum labore voluptatem enim voluptatibus eos nostrum corrupti reiciendis at culpa quasi cum, consequuntur quis quaerat unde aut natus. Esse ea aperiam expedita et accusantium a! <span class="more-text"> </span>
+						</p>
+						<button onclick="readMore(this)" class="read translateY-25">Read More</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+   <!-- Read More/Less Script -->
+  <script src="main.js"></script>
+</body>
+
+</html>
